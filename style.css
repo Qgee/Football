@@ -1,0 +1,186 @@
+html body{
+	margin: 0px;
+	background-color: black;
+
+}
+
+body{
+    background-color: black;
+    /*background-image: url(purple.jpg);
+	background-size: 25%;*/
+}
+
+
+.notFooter{
+	min-height: 100%;
+	/*height: auto !important;
+	height: 100%;*/
+	margin: 0 auto;
+	text-align: center; 
+}
+
+/* HEADER */
+nav{
+	width: 100%;
+	height: 100px;
+	background-color: none;
+	padding-top: 20px;
+	color: white;
+	font-family: Fantasy;
+	letter-spacing:0.1em;
+	font-size: 30px;
+	
+}
+
+/*span{
+	height: 30px;
+	margin: 0 auto;
+	color: white;
+	font-family: Fantasy;
+	letter-spacing:0.1em;
+	font-size: 30px;
+	padding-top: 200px;
+	text-shadow: 3px 3px purple;
+	background-color: red;
+}
+*/
+/* FOOTER */
+footer{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	color: white;
+	font-family: Georgia, serif;
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	left: 0;
+	margin-left: -20px;
+}
+
+footer ul{
+	line-height: 50px;
+	text-align: center;
+	margin: 0 auto;
+	font-family: fantasy;
+}
+
+footer li{
+	font-size: 40px;
+	display: inline;
+	margin-right: 40px;
+}
+
+a{
+	text-decoration: none;
+	font-size: 20px;
+}
+
+a:hover{
+	color: white bold;
+	text-decoration: none;
+	/*text-shadow: 2px 2px green;*/
+}
+
+a:visited{
+	color: #FFFFFF;
+}
+
+#show{
+  width: auto;
+  height: 450px;
+  max-height: 450px;
+  overflow: hidden;
+  background-color: none;
+
+  /*.item img {
+    width: 800px;
+    height: 800px;
+    background-color: yellow;
+  }*/
+}
+
+.item img{
+	height: 200px;
+	/*width: 400px;*/
+	
+	background-color: none;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+/*.carousel-indicators{
+	postion: relative;
+	bottom: 10px;
+}*/
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.imageBar{
+	width: 100%;
+	height: 200px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	background-color: none;
+	display: inline-block;
+}
+
+#neymar{background-image: url(Images/Neymar/neymar.png);}
+
+#neymar_1{background-image: url(Images/Neymar/neymar_1.jpeg);}
+#neymar_2{background-image: url(Images/Neymar/neymar_2.jpeg);}
+#neymar_3{background-image: url(Images/Neymar/neymar_3.jpeg);}
+
+
+
+#rodrigues{
+	background-image: url(Images/Rodrigues/rodrigues.png);
+}
+
+#ronaldo{
+	background-image: url(Images/Ronaldo/ronaldo.png);
+}
+
+.neymarPics,
+.rodriguesPics,
+.ronaldoPics
+{
+	width: 100%;
+	padding-top: 150px;
+	text-align: center;
+}
+
+#neymar_1,#neymar_2,#neymar_3{
+	width: 275px;
+	height: 275px;
+	background-color: orange;
+	display: inline-block;
+	background-size: 100%;
+	margin-right: 75px;
+}
+
+#neymar, #rodrigues, #ronaldo{
+	width: 160px;
+	height: 160px;
+	background-color: none;
+	display: inline-block;
+	background-size: 100%;
+	margin-right: 50px;
+}
+
+#rodrigues,#ronaldo{
+	opacity: 0.30;
+}
