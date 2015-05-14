@@ -18,9 +18,152 @@
 	<!-- Link Bootstrap via Internet -->	
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
- --></head>
+ -->
+ 
+<!--  
+ 	<script>
+ 		$('.video').click(function(){this.paused?this.play():this.pause();});
+ 	</script>
+-->
+<script>
+		function neymarOpen(){
+			$(".infoRonaldo").hide();
+			$(".infoRodrigues").hide();
+			$(".infoNeymar").show();
+
+			$(".videoNeymar").show();
+			$(".videoRodrigues").hide();
+			$(".videoRonaldo").hide();
+
+			$("#neymar").animate({opacity:1},100);
+			$("#rodrigues").animate({opacity:0.3});
+			$("#ronaldo").animate({opacity:0.3});
+		}
+	
+		function rodriguesOpen(){
+			$(".infoNeymar").hide();
+			$(".infoRonaldo").hide();
+			$(".infoRodrigues").show();
+
+			$(".videoNeymar").hide();
+			$(".videoRodrigues").show();
+			$(".videoRonaldo").hide();
+
+			$("#neymar").animate({opacity:0.3});
+			$("#rodrigues").animate({opacity:1},100);
+			$("#ronaldo").animate({opacity:0.3});
+		}
+
+		function ronaldoOpen(){
+			$(".infoNeymar").hide();
+			$(".infoRodrigues").hide();	
+			$(".infoRonaldo").show();
+
+			$(".videoNeymar").hide();
+			$(".videoRodrigues").hide();
+			$(".videoRonaldo").show();
+
+			$("#neymar").animate({opacity:0.3});
+			$("#rodrigues").animate({opacity:0.3});
+			$("#ronaldo").animate({opacity:1},100);
+		}
+	
+	</script>
+
+
+</head>
 
 <body>
+
+<div id="blogHeader">Quick Stats</div>
+
+<div id="blogLeftBar">
+	<ol>
+		<li id="neymar" onclick="neymarOpen()"></li> <br>
+		<li id="rodrigues" onclick="rodriguesOpen()"></li>
+		<li id="ronaldo" onclick="ronaldoOpen()"></li>
+	</ol>	
+</div>
+
+<div id="blogInfo">
+	<div class="infoNeymar">
+		<h1>Neymar</h1>
+		<h3>Soccer player</h3>
+		Neymar da Silva Santos Junior, commonly known as Neymar or Neymar Jr., is a Brazilian professional footballer who plays for Spanish club FC Barcelona and is the captain for the Brazil national team. He plays as a forward or winger.
+		<br><br>
+		Born: February 5, 1992 (age 23), Mogi das Cruzes, São Paulo, Brazil
+		<br><br>
+		Height: 5' 9" (1.74 m)
+		<br><br>
+		Salary: 8.8 million EUR (2014)
+		<br><br>
+		Children: Davi Lucca da Silva
+		<br><br>
+		Siblings: Rafaella Beckran
+		<br><br>
+		Current teams: FC Barcelona (#11 / Forward, Forward), Brazil national football team (Forward)
+	</div>
+
+
+	<div class="infoRodrigues" style="display:none;">
+		<h1>James Rodríguez</h1>
+		<h3>Soccer player</h3>
+		James David Rodríguez Rubio, usually known as James Rodríguez or simply James, is a Colombian footballer who plays for Spanish club Real Madrid and the Colombian national team, as an attacking midfielder or winger.
+		<br><br>
+		Born: July 12, 1991 (age 23), Cúcuta, Colombia
+		<br><br>
+		Height: 5' 11" (1.80 m)
+		<br><br>
+		Weight: 170 lbs (77 kg)
+		<br><br>
+		Spouse: Daniela Ospina (m. 2010)
+		<br><br>
+		Salary: 6 million EUR (2014)
+		<br><br>
+		Current teams: Colombia national football team (Midfielder), Real Madrid C.F. (#10 / Midfielder)
+	</div>
+
+	<div class="infoRonaldo" style="display:none;">
+		<h1>Cristiano Ronaldo</h1>
+		<h3>Soccer player</h3>
+		Cristiano Ronaldo dos Santos Aveiro, GOIH, known as Cristiano Ronaldo, is a Portuguese professional footballer who plays for Spanish club Real Madrid C.F. and the Portugal national team. He is a forward and serves as captain for Portugal.
+		<br><br>
+		Born: February 5, 1985 (age 30), Santo António, Portugal
+		<br><br>
+		Height: 6' 1" (1.85 m)
+		<br><br>
+		Weight: 176 lbs (80 kg)
+		<br><br>
+		Salary: 17 million EUR (2014)
+		<br><br>
+		Children: Cristiano Ronaldo Jr.
+		<br><br>
+		Current teams: Real Madrid C.F. (#7 / Forward), Portugal national football team (Forward)
+	</div>
+
+</div>
+
+<div id="blogVideo">
+	<div class="videoHeader"></div>
+	
+	<iframe class="videoNeymar" 
+		width="420" height="345" autoplay="1"
+		src="http://www.youtube.com/embed/sdF3c4eNr9U">
+	</iframe>
+
+    <iframe class="videoRodrigues" style="display:none;"
+		width="420" height="345"
+		src="http://www.youtube.com/embed/C78XdT1PaQc">
+	</iframe>
+
+	<iframe class="videoRonaldo" style="display:none;" 
+		width="420" height="345"
+		src="http://www.youtube.com/embed/W7Nh3LLX_IU">
+	</iframe>
+
+
+</div>
+
 
 
 <!-- FOOTER -->
@@ -33,6 +176,10 @@
 				<li><a id="blog" href="blog.html">BLOG</a></li>
 			</ul>
 		</footer>
+
+	<!-- Launch JQuery -->
+	<script src="jQuery.js"></script>
+
 
 </body>
 </html>
