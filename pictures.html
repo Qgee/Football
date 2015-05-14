@@ -20,15 +20,47 @@
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
  -->
+ 	<script>
+		function neymarOpen(){
+			$(".ronaldoPics").hide();
+			$(".rodriguesPics").hide();
+			$(".neymarPics").show();
+
+			$("#neymar").animate({opacity:1},100);
+			$("#rodrigues").animate({opacity:0.3});
+			$("#ronaldo").animate({opacity:0.3});
+		}
+	
+		function rodriguesOpen(){
+			$(".neymarPics").hide();
+			$(".ronaldoPics").hide();
+			$(".rodriguesPics").show();
+
+			$("#neymar").animate({opacity:0.3});
+			$("#rodrigues").animate({opacity:1},100);
+			$("#ronaldo").animate({opacity:0.3});
+		}
+
+		function ronaldoOpen(){
+			$(".neymarPics").hide();
+			$(".rodriguesPics").hide();	
+			$(".ronaldoPics").show();
+
+			$("#neymar").animate({opacity:0.3});
+			$("#rodrigues").animate({opacity:0.3});
+			$("#ronaldo").animate({opacity:1},100);
+		}
+	
+	</script>
 </head>
 
 <body>
 <!-- NAVIGATION PICTURES -->
 		<nav>
 			<div class="imageBar">
-				<div id="neymar"></div>
-    			<div id="rodrigues"></div>
-    			<div id="ronaldo"></div>
+				<div id="neymar" onclick="neymarOpen()"></div>
+    			<div id="rodrigues" onclick="rodriguesOpen()"></div>
+    			<div id="ronaldo" onclick="ronaldoOpen()"></div>
 			</div>
 		</nav>
 
@@ -39,15 +71,15 @@
 		</div>
 
 		<div class="rodriguesPics" style="display:none;">
-			<div id="neymar_1"></div>
-			<div id="neymar_2"></div>
-			<div id="neymar_3"></div>
+			<div id="rodrigues_1"></div>
+			<div id="rodrigues_2"></div>
+			<div id="rodrigues_3"></div>
 		</div>
 
 		<div class="ronaldoPics" style="display:none;">
-			<div id="neymar_1"></div>
-			<div id="neymar_2"></div>
-			<div id="neymar_3"></div>
+			<div id="ronaldo_1"></div>
+			<div id="ronaldo_2"></div>
+			<div id="ronaldo_3"></div>
 		</div>
 
 
@@ -67,8 +99,5 @@
 	<script src="jQuery.js"></script>
 
 </body>
-
-<script type="text/javascript"></script>
-
 
 </html>

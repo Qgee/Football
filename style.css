@@ -146,13 +146,18 @@ a:visited{
 
 
 
-#rodrigues{
-	background-image: url(Images/Rodrigues/rodrigues.png);
-}
+#rodrigues{background-image: url(Images/Rodrigues/rodrigues.png);}
+#rodrigues_1{background-image: url(Images/Rodrigues/rodrigues_1.jpeg);}
+#rodrigues_2{background-image: url(Images/Rodrigues/rodrigues_2.jpeg);}
+#rodrigues_3{background-image: url(Images/Rodrigues/rodrigues_3.jpeg);}
 
-#ronaldo{
-	background-image: url(Images/Ronaldo/ronaldo.png);
-}
+#ronaldo{background-image: url(Images/Ronaldo/ronaldo.png);}
+#ronaldo_1{background-image: url(Images/Ronaldo/ronaldo_1.jpeg);}
+#ronaldo_2{background-image: url(Images/Ronaldo/ronaldo_2.jpeg);}
+#ronaldo_3{background-image: url(Images/Ronaldo/ronaldo_3.jpeg);}
+
+
+
 
 .neymarPics,
 .rodriguesPics,
@@ -163,10 +168,13 @@ a:visited{
 	text-align: center;
 }
 
-#neymar_1,#neymar_2,#neymar_3{
+#neymar_1,#neymar_2,#neymar_3,
+#rodrigues_1,#rodrigues_2,#rodrigues_3,
+#ronaldo_1,#ronaldo_2,#ronaldo_3
+{
 	width: 275px;
 	height: 275px;
-	background-color: orange;
+	background-color: none;
 	display: inline-block;
 	background-size: 100%;
 	margin-right: 75px;
